@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PetShop.master.cs" Inherits="PetShop.Pages.PetShop" %>
+
+<%@ Register TagPrefix="PetShop" TagName="CatLinks" Src="~/Controls/Categories.ascx" %>
+<%@ Register TagPrefix="PetShop" TagName="PurchaseWidget" Src="~/Controls/PurchaseWidget.ascx" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>PetShop</title>
+    <link rel="stylesheet" href="/Content/Styles.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="header">
+            <PetShop:PurchaseWidget runat="server"/>
+            <div class="title">Зоомагазин</div>
+        </div>
+        <div id="categories">
+            <PetShop:CatLinks runat="server" />
+            <a href="/Pages/ProductsManager.aspx">Склад продуктов</a>
+            <a href="/Pages/OrdersManager.aspx">Управление заказами</a>
+        </div>
+        <asp:ContentPlaceHolder ID="bodyContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

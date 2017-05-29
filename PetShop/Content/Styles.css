@@ -1,0 +1,31 @@
+body {background-color: silver;}
+div#header div.title, div.item h3, div.item h4{font:bold 4em Arial;color:silver;}
+div.title {text-align:center;}
+div#header {background-color:#123;border-bottom: 2px solid; color: White;}
+div#header a {color:orange;text-decoration:none;}
+a {font:bold 1em Arial;text-decoration:none; color:#123;}
+a:visited {color:#123;}
+a:hover {color:darkgreen;}
+div#PurchaseWidget {text-align:right; padding:2em;}
+div#content {border-left:2px solid white;margin-left:16em; padding: 2em;}
+div.pager {text-align:center; border-top:2px solid black;margin-top:1em;padding: .5em 0 0 0;}
+div.pager a {font-size: 1.1.em; color:#888; text-decoration:none;}
+div.pager a:hover {background-color:white;}
+div.pager a.selected {bacground-color:#333;color:#252525;}
+div#categories{float:left;width:15em;padding:.3em;}
+div#categories a
+{
+font:bold 1.1em Arial; display:block;
+text-decoration:none; padding :.6em; color:black;
+border-bottom:1px solid black;
+}
+th {background-color: #123;color:white;}
+div#categories a.selected {background-color:#123;color:white;}
+div#categories a:hover {background-color:#ccc;color:darkblue;}
+
+button{color:white;background-color:#333;border: 1px solid white;margin:1px;}
+table {border:1px solid black;background-color:#889999;color:#111; width:100%;}
+button:hover{background-color:white;color:#333;border: 1px solid black}
+table#items {border:1px solid #123;background-color:silver;}
+table#items th {background-color:#163;}
+tr.border_bottom td {border-bottom:2px solid white;}
